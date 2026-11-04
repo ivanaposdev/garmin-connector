@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/.well-known/:path*", "destination": "/api/oauth" },
+    { "source": "/oauth/:path*", "destination": "/api/oauth" }
+  ]
+}

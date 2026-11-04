@@ -1,0 +1,17 @@
+{
+  "name": "garmin-claude-connector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Your own Garmin data in Claude chat, as a claude.ai custom connector. Wraps garmin-personal-mcp with secret-URL auth.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node standalone.js",
+    "secret": "node -e \"console.log(require('crypto').randomBytes(32).toString('base64url'))\""
+  },
+  "dependencies": {
+    "garmin-personal-mcp": "0.1.1"
+  }
+}
